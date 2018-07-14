@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('chats/create','ChatsController@create');
+Route::post('chats','ChatsController@store');
+
